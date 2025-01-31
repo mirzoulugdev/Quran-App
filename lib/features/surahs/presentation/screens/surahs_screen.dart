@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_app/core/utils/app_colors.dart';
 
-class SurahScreen extends StatefulWidget {
-  const SurahScreen({super.key});
+class SurahsScreen extends StatefulWidget {
+  const SurahsScreen({super.key});
 
   @override
-  State<SurahScreen> createState() => _SurahScreenState();
+  State<SurahsScreen> createState() => _SurahsScreenState();
 }
 
-class _SurahScreenState extends State<SurahScreen> {
+class _SurahsScreenState extends State<SurahsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
