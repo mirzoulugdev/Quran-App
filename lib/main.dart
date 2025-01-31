@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_app/core/routes/app_router.dart';
+import 'package:quran_app/features/surahs/presentation/screens/surahs_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,15 +15,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(360, 690),
-      child: MaterialApp.router(
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        routerConfig: AppRouter.router,
+        
         title: 'Quran App',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
+        home: SurahsScreen(),
       ),
+    
     );
   }
 }
