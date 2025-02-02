@@ -16,11 +16,11 @@ class AppRouter {
         name: AppRouterNames.surahInfo,
         builder: (context, state) => SurahInfoScreen(),
       ),
-      GoRoute(
-        path: AppRouterNames.surah,
-        name: AppRouterNames.surah,
-        builder: (context, state) => SurahScreen(),
-      ),
+      // GoRoute(
+      //   path: AppRouterNames.surah,
+      //   name: AppRouterNames.surah,
+      //   builder: (context, state) => SurahScreen(),
+      // ),
     ],
   );
 }
