@@ -7,8 +7,6 @@ import 'package:quran_app/core/routes/app_router.dart';
 
 import 'package:quran_app/features/surahs/presentation/screens/surahs_screen.dart';
 
-
-
 import 'package:quran_app/features/surahs/presentation/blocs/bloc/surah_info_bloc.dart';
 
 void main() async {
@@ -22,17 +20,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return ScreenUtilInit(
-      designSize: Size(360, 690),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        
-        title: 'Quran App',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -54,12 +41,8 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-
         ),
-
       ),
-
-
     );
   }
 }
