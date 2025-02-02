@@ -5,8 +5,16 @@ import 'package:quran_app/core/utils/app_icons.dart';
 import 'package:quran_app/core/utils/app_images.dart';
 
 class SurahBanner extends StatelessWidget {
+  final String surahName;
+  final String surahEnglishName;
+  final String revelationType;
+  final String numberOfAyahs;
   const SurahBanner({
     super.key,
+    required this.surahName,
+    required this.surahEnglishName,
+    required this.revelationType,
+    required this.numberOfAyahs,
   });
 
   @override
@@ -37,7 +45,7 @@ class SurahBanner extends StatelessWidget {
                   Column(
                     children: [
                       Text(
-                        "سورة الفاتحة",
+                        surahName,
                         style: TextStyle(
                           fontSize: 24.sp,
                           fontWeight: FontWeight.w600,
@@ -45,7 +53,7 @@ class SurahBanner extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "The Opening",
+                        surahEnglishName,
                         style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w600,
@@ -58,7 +66,7 @@ class SurahBanner extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "MECCAN",
+                            revelationType.toUpperCase(),
                             style: TextStyle(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
@@ -66,7 +74,7 @@ class SurahBanner extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "7 VERSES",
+                            "$numberOfAyahs VERSES",
                             style: TextStyle(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
