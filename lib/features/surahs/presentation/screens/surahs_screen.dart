@@ -6,7 +6,6 @@ import 'package:quran_app/core/utils/app_colors.dart';
 import 'package:quran_app/core/utils/app_icons.dart';
 import 'package:quran_app/core/utils/app_images.dart';
 import 'package:quran_app/features/surahs/presentation/widgets/custom_listview.dart';
-import 'package:quran_app/features/surahs/presentation/widgets/surah_banner.dart';
 
 class SurahsScreen extends StatefulWidget {
   const SurahsScreen({super.key});
